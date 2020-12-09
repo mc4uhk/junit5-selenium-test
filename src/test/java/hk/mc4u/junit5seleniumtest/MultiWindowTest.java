@@ -29,6 +29,8 @@ class MultiWindowTest {
 
 		String MainWindow = driver.getWindowHandle();
 
+		Thread.sleep(3000);
+		
 		// To handle all new opened window.
 		Set<String> s1 = driver.getWindowHandles();
 		Iterator<String> i1 = s1.iterator();
