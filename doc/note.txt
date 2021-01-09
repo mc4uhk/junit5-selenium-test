@@ -1,0 +1,14 @@
+
+Reference: https://stackoverflow.com/questions/1266338/merge-two-branch-revisions-using-subversion
+Note: To merge two branches
+Checkout URL A. Use SVN merge to merge URL B to your working copy of A. Commit A.
+
+
+
+svn copy http://localhost/svn/repos/spring-boot-test/branches/Phase1
+
+svn diff http://localhost/svn/repos/spring-boot-test/branches/Phase1_in_P3/ http://localhost/svn/repos/spring-boot-test/branches/Phase1/
+
+svn merge http://localhost/svn/repos/spring-boot-test/branches/Phase1_in_P3
+
+
